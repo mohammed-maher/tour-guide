@@ -15,9 +15,6 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
-import com.re_coded.example.android.kirkukcity.R;
-import com.re_coded.example.android.kirkukcity.KenBurnsView;
-
 public class SplashActivity extends Activity {
 
     // Splash screen timer

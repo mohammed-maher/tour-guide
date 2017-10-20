@@ -5,35 +5,47 @@ package com.re_coded.example.android.kirkukcity;
  */
 
 
+import android.graphics.RectF;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.Interpolator;
 
-
-        import android.graphics.RectF;
-        import android.view.animation.AccelerateDecelerateInterpolator;
-        import android.view.animation.Interpolator;
-
-        import java.util.Random;
+import java.util.Random;
 
 public class RandomTransitionGenerator implements com.re_coded.example.android.kirkukcity.TransitionGenerator {
 
-    /** Default value for the transition duration in milliseconds. */
+    /**
+     * Default value for the transition duration in milliseconds.
+     */
     public static final int DEFAULT_TRANSITION_DURATION = 10000;
 
-    /** Minimum rect dimension factor, according to the maximum one. */
+    /**
+     * Minimum rect dimension factor, according to the maximum one.
+     */
     private static final float MIN_RECT_FACTOR = 0.75f;
 
-    /** Random object used to generate arbitrary rects. */
+    /**
+     * Random object used to generate arbitrary rects.
+     */
     private final Random mRandom = new Random(System.currentTimeMillis());
 
-    /** The duration, in milliseconds, of each transition. */
+    /**
+     * The duration, in milliseconds, of each transition.
+     */
     private long mTransitionDuration;
 
-    /** The {@link Interpolator} to be used to create transitions. */
+    /**
+     * The {@link Interpolator} to be used to create transitions.
+     */
     private Interpolator mTransitionInterpolator;
 
-    /** The last generated transition. */
+    /**
+     * The last generated transition.
+     */
     private Transition mLastGenTrans;
 
-    /** The bounds of the drawable when the last transition was generated. */
+    /**
+     * The bounds of the drawable when the last transition was generated.
+     */
     private RectF mLastDrawableBounds;
 
 
@@ -88,8 +100,9 @@ the last transition. */
      * won't be higher than the largest rect with the same aspect ratio of {@code viewportRect}
      * that {@code drawableBounds} can contain. They also won't be lower than the dimensions
      * of this upper rect limit weighted by {@code MIN_RECT_FACTOR}.
+     *
      * @param drawableBounds the bounds of the drawable that will be zoomed and panned.
-     * @param viewportRect the bounds of the view that the drawable will be shown.
+     * @param viewportRect   the bounds of the view that the drawable will be shown.
      * @return an arbitrary generated rect with the same aspect ratio of {@code viewportRect}
      * that will be contained within {@code drawableBounds}.
      */
@@ -123,6 +136,7 @@ the last transition. */
 
     /**
      * Sets the duration, in milliseconds, for each transition generated.
+     *
      * @param transitionDuration the transition duration.
      */
     public void setTransitionDuration(long transitionDuration) {
@@ -132,6 +146,7 @@ the last transition. */
 
     /**
      * Sets the {@link Interpolator} for each transition generated.
+     *
      * @param interpolator the transition interpolator.
      */
     public void setTransitionInterpolator(Interpolator interpolator) {

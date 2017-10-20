@@ -10,8 +10,6 @@ import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import com.re_coded.example.android.kirkukcity.R;
-
 
 public class RobotoTextView extends TextView {
 
