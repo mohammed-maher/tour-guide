@@ -23,12 +23,12 @@ public class PlaceDetailsActivity extends AppCompatActivity {
             return;
         }
 
-        final String locationName = extras.getString("TITLE");
-        int locationImage = extras.getInt("IMAGE");
-        String locationDescription = extras.getString("DESCRIPTION");
-        final String locationLng = extras.getString("LONGITUDE");
-        final String locationLat = extras.getString("LATITUDE");
-        String locationAdress = extras.getString("ADDRESS");
+        final String locationName = extras.getString(getString(R.string.title_string));
+        int locationImage = extras.getInt(getString(R.string.image_text));
+        String locationDescription = extras.getString(getString(R.string.description_text));
+        final String locationLng = extras.getString(getString(R.string.longitude_text));
+        final String locationLat = extras.getString(getString(R.string.latitude_text));
+        String locationAdress = extras.getString(getString(R.string.address_text));
 
         this.setTitle(locationName);
 

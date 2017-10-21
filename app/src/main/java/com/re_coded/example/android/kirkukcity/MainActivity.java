@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity implements LocationFragment.
     @Override
     public void onLocationSelected(Context context, int position, ArrayList<Landmark> landmarks) {
         Intent intent = new Intent(context, PlaceDetailsActivity.class);
-        intent.putExtra("TITLE", landmarks.get(position).getName());
-        intent.putExtra("IMAGE", landmarks.get(position).getImage());
-        intent.putExtra("DESCRIPTION", landmarks.get(position).getDescription());
-        intent.putExtra("ADDRESS", landmarks.get(position).getLocationAddress());
-        intent.putExtra("LONGITUDE", landmarks.get(position).getLocationLongitude());
-        intent.putExtra("LATITUDE", landmarks.get(position).getLocationLatitude());
+        intent.putExtra(getString(R.string.title_string), landmarks.get(position).getName());
+        intent.putExtra(getString(R.string.image_text), landmarks.get(position).getImage());
+        intent.putExtra(getString(R.string.description_text), landmarks.get(position).getDescription());
+        intent.putExtra(getString(R.string.address_text), landmarks.get(position).getLocationAddress());
+        intent.putExtra(getString(R.string.longitude_text), landmarks.get(position).getLocationLongitude());
+        intent.putExtra(getString(R.string.latitude_text), landmarks.get(position).getLocationLatitude());
         context.startActivity(intent);
     }
 }
