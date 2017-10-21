@@ -1,18 +1,26 @@
 package com.re_coded.example.android.kirkukcity;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import layout.HotelsFragment;
+import com.re_coded.example.android.kirkukcity.fragments.LocationFragment;
+import com.re_coded.example.android.kirkukcity.fragments.MallsFragment;
+import com.re_coded.example.android.kirkukcity.fragments.RestaurantFragment;
+
+import com.re_coded.example.android.kirkukcity.fragments.HotelsFragment;
 
 /**
  * Created by Lenovo on 10/18/2017.
  */
 
 public class LocationsAdapter extends FragmentPagerAdapter {
-    public LocationsAdapter(FragmentManager fm) {
+
+    private Context mContext;
+    public LocationsAdapter(FragmentManager fm,Context context) {
         super(fm);
+        this.mContext = context;
     }
 
     @Override
@@ -44,7 +52,7 @@ public class LocationsAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        CharSequence[] titles = {"Landmarks", "Restaurants", "Hotels", "Malls"};
+        CharSequence[] titles = {mContext.getString(R.string.landmarks_title), mContext.getString(R.string.restaurants_title), mContext.getString(R.string.hotels_title), mContext.getString(R.string.malls_title)};
         return titles[position];
     }
 }

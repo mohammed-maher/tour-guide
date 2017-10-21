@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.re_coded.example.android.kirkukcity.RestaurantFragment">
+    tools:context="com.re_coded.example.android.kirkukcity.fragments.RestaurantFragment">
     <ListView
         android:id="@+id/places_list"
         android:layout_width="match_parent"

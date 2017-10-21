@@ -12,6 +12,8 @@ import android.graphics.RectF;
  */
 public final class MathUtils {
 
+    private MathUtils(){}
+
     /**
      * Truncates a float number {@code f} to {@code decimalPlaces}.
      *

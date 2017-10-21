@@ -21,7 +21,7 @@ import java.util.List;
 
 public class LandmarkArrayAdapter extends ArrayAdapter<Landmark> {
 
-    List<Landmark> landmarks = new ArrayList<>();
+    private List<Landmark> landmarks = new ArrayList<>();
 
     public LandmarkArrayAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull ArrayList<Landmark> list) {
         super(context, resource, list);
@@ -31,24 +31,23 @@ public class LandmarkArrayAdapter extends ArrayAdapter<Landmark> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        View listitem = convertView;
 
-        if (listitem == null) {
-            listitem = LayoutInflater.from(getContext()).inflate(R.layout.landmark_list_item, parent, false);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.landmark_list_item, parent, false);
         }
 
-        Typeface tf = Typeface.createFromAsset(listitem.getContext().getAssets(), "fonts/Roboto-Regular.ttf");
-        ImageView image = (ImageView) listitem.findViewById(R.id.place_image);
-        TextView title = (TextView) listitem.findViewById(R.id.title_text_view);
+        Typeface tf = Typeface.createFromAsset(convertView.getContext().getAssets(), "fonts/Roboto-Regular.ttf");
+        ImageView image = (ImageView) convertView.findViewById(R.id.place_image);
+        TextView title = (TextView) convertView.findViewById(R.id.title_text_view);
 
         title.setTypeface(tf);
 
-        TextView address = (TextView) listitem.findViewById(R.id.address_text_view);
+        TextView address = (TextView) convertView.findViewById(R.id.address_text_view);
         Landmark item = (Landmark) landmarks.get(position);
         image.setImageResource(item.getImage());
         title.setText(item.getName());
 
         address.setText(item.getLocationAddress());
-        return listitem;
+        return convertView;
     }
 }

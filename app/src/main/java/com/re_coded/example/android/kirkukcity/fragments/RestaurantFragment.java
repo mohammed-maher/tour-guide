@@ -1,4 +1,4 @@
-package com.re_coded.example.android.kirkukcity;
+package com.re_coded.example.android.kirkukcity.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,14 +9,14 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.re_coded.example.android.kirkukcity.Landmark;
+import com.re_coded.example.android.kirkukcity.LandmarkArrayAdapter;
+import com.re_coded.example.android.kirkukcity.R;
+
 import java.util.ArrayList;
 
 
-public class MallsFragment extends Fragment {
-
-    public MallsFragment() {
-        // Required empty public constructor
-    }
+public class RestaurantFragment extends Fragment {
 
     LocationFragment.OnLocationSelectedListener mCallback;
 
@@ -25,6 +25,9 @@ public class MallsFragment extends Fragment {
         public void onLocationSelected(Context context, int position, ArrayList<Landmark> array);
     }
 
+    public RestaurantFragment() {
+        // Required empty public constructor
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,9 +36,9 @@ public class MallsFragment extends Fragment {
         View layout = inflater.inflate(R.layout.fragment_location, container, false);
 
         final ArrayList<Landmark> landmarks = new ArrayList<Landmark>();
-        landmarks.add(new Landmark("44.381781", "35.458698", "Almuhafaza St, Beside Saj Express", "Ghazi Mall", R.drawable.ic_ghazimall, "A mall that specializes in clothing and outfits, It conatins a wide range of brands and fashions for ladies and gentlemen"));
-        landmarks.add(new Landmark("44.389052", "35.475813", "Entry of Kumari Rd, In front of Slemani restaurant", "LC Waikiki", R.drawable.ic_lcwaikiki, "A mall that specializes in clothing and outfits, It conatins a wide range of brands and fashions for ladies and gentlemen"));
-        landmarks.add(new Landmark("35.458526", "44.381439", "Al-Muhafaza st, beside ghazi mall", "Maximall", R.drawable.ic_maximall, "The Kirkuk branch of the turkish well-known brand Lc Waikiki clothing malls series"));
+        landmarks.add(new Landmark("44.390026", "35.476677", getString(com.re_coded.example.android.kirkukcity.R.string.kebab_abdullah_address), getString(com.re_coded.example.android.kirkukcity.R.string.kebab_abdullah_name), R.drawable.ic_screenshot_1, getString(com.re_coded.example.android.kirkukcity.R.string.about_kebab_abdullah)));
+        landmarks.add(new Landmark("44.381433", "35.456909", getString(com.re_coded.example.android.kirkukcity.R.string.today_rest_address), getString(com.re_coded.example.android.kirkukcity.R.string.today_rest_name), R.drawable.ic_todayrest, getString(com.re_coded.example.android.kirkukcity.R.string.about_today_rest)));
+        landmarks.add(new Landmark("44.368844", "35.572798", getString(com.re_coded.example.android.kirkukcity.R.string.media_restaurant_addres), getString(com.re_coded.example.android.kirkukcity.R.string.media_restaurant_name), R.drawable.ic_mediyarestaurant, getString(com.re_coded.example.android.kirkukcity.R.string.about_media_restaurant)));
 
         ListView list = (ListView) layout.findViewById(R.id.places_list);
         LandmarkArrayAdapter adapter = new LandmarkArrayAdapter(getActivity(), R.layout.landmark_list_item, landmarks);

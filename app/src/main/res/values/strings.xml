@@ -3,4 +3,47 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back_button">Back</string>
+    <string name="view_on_map">View on map</string>
+    <string name="kirkuk_citadel_address">Center of Kirkuk</string>
+    <string name="kirkuk_citadel_name">Kirkuk Citadel</string>
+    <string name="about_kirkuk_citadel">The Kirkuk Citadel is located in the centre of the city of Kirkuk in Iraq, and is considered to be the oldest part of the city. The citadel stands on an artificial mound 130 feet high located on a plateau across the Khasa River. The mound, or tell, is believed to have been built by King Ashurnasirpal II between 884 and 858 BCE as a military defence line of Arrapha.</string>
+    <string name="sacred_heart_address">Almuhafaza Street, Behind Hikma Hospital</string>
+    <string name="sacred_heart_name">Sacred Heart Cathedral</string>
+    <string name="about_sacred_heart">Sacred Heart was established in 1964 and is the largest of 7 churches in kirkuk</string>
+    <string name="alnoor_mosque_address">Baghdad Road, In front of Afandi building</string>
+    <string name="alnoor_mosque_name">Alnoor Mosque</string>
+    <string name="about_alnoor_sacred_heart">Alnoor was built in 1998 by Rafiq Shafiq, With total area of 2500m² and 5 domes, It\'s know to be the largest mosque in the city</string>
+    <string name="qishla_address">Entry of Republic Road</string>
+    <string name="qishla_name">Qishla</string>
+    <string name="about_qishla">The Qishla was built in 1863 to be the headquarters of the Ottoman army in Kirkuk. The building is located in the city centre, occupying about 6 acres (24,000 m2). The word Qishla is a Turkish word means the place where the army stay at the winter.</string>
+    <string name="ghazimall_address">Almuhafaza St, Beside Saj Express</string>
+    <string name="ghazimall_name">Ghazi Mall</string>
+    <string name="about_ghazimall">A mall that specializes in clothing and outfits, It conatins a wide range of brands and fashions for ladies and gentlemen</string>
+    <string name="lcwaikiki_address">Entry of Kumari Rd, In front of Slemani restaurant</string>
+    <string name="lcwaikiki_name">LC Waikiki</string>
+    <string name="about_lcwaikiki">A mall that specializes in clothing and outfits, It conatins a wide range of brands and fashions for ladies and gentlemen</string>
+    <string name="about_maximall">The Kirkuk branch of the turkish well-known brand Lc Waikiki clothing malls series</string>
+    <string name="maximall_name">Maximall</string>
+    <string name="maximall_address">Al-Muhafaza st, beside ghazi mall</string>
+    <string name="kebab_abdullah_address">Entry of Komari Street</string>
+    <string name="kebab_abdullah_name">Abdullah\'s Kebab</string>
+    <string name="about_kebab_abdullah">Abdullah\'s Kebab is a retaurant in Kirkuk that provides a wide range of foods and drinks</string>
+    <string name="today_rest_name"><![CDATA[Today Restaurant&Cafe]]></string>
+    <string name="today_rest_address">Baghdad Rd, Kirkuk</string>
+    <string name="about_today_rest">Today is a retaurant in Kirkuk that provides a wide range of foods and drinks</string>
+    <string name="about_media_restaurant">Media is tourist restaurant and one of the largest restaurants in Kirkuk, Its well known by its turkish professional turkish staff.</string>
+    <string name="media_restaurant_addres">Kirkuk, entry of erbil Road</string>
+    <string name="media_restaurant_name">Media Tourist Restaurant</string>
+    <string name="alsanawbar_hotel_address">Baladiya St, In front of Jennet sweets</string>
+    <string name="alsanawbar_hotel_name">Alsanawbar</string>
+    <string name="about_alsanawbar_hotel">Al-Sanawbar is located in the heart of Kirkuk and has been known for its good service and low price</string>
+    <string name="kirkukplaza_hotel_address">Tisin st, Near kardaslik school</string>
+    <string name="kirkukplaza_hotel_name">Kirkuk Plaza</string>
+    <string name="about_kirkukplaza_hotel">KirkukPlaza is located in the heart of Kirkuk and has been known for its good service and low price</string>
+    <string name="landmarks_title">Landmarks</string>
+    <string name="restaurants_title">Restaurants</string>
+    <string name="hotels_title">Hotels</string>
+    <string name="malls_title">Malls</string>
+
 </resources>

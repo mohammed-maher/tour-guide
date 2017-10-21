@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.re_coded.example.android.kirkukcity.PlaceDetails">
+    tools:context="com.re_coded.example.android.kirkukcity.PlaceDetailsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,8 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
-        android:text="Alnoor Mosque"
-        android:textSize="20dp" />
+        android:text=""
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
-            android:text="em ipsum lorem ipsum lorem ipsum lorem ipsum " />
+            android:text="" />
     </LinearLayout>
 
     <LinearLayout
@@ -66,7 +66,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
-            android:text="em ipsum lorem ipsum lorem ipsum em ipsum lorem ipsum lorem ipsum em ipsum lorem ipsum lorem ipsumem ipsum lorem ipsum lorem ipsumem ipsum lorem ipsum lorem ipsum lorem ipsum " />
+            android:text="" />
     </LinearLayout>
 
     <LinearLayout
@@ -82,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="Back" />
+            android:text="@string/back_button" />
 
         <Button
             android:id="@+id/map_button"
@@ -91,7 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="View On Map" />
+            android:text="@string/view_on_map" />
 
     </LinearLayout>
     </LinearLayout>
